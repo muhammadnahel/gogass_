@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOGASS RENTCAR | Luxury Car Rental 2025</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass-card border-none rounded-none bg-opacity-90">
+    
+    <!-- Logo -->
+    <div class="flex items-center">
+        <img src="https://i.imgur.com/6oLkKT7.png" alt="Logo GOGASS RENTCAR"
+             class="h-10 sm:h-12 md:h-16 lg:h-20">
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-semibold">
+        <a href="#home" class="nav-link">Beranda</a>
+        <a href="#about" class="nav-link">Tentang Kami</a>
+        <a href="#why" class="nav-link">Keunggulan</a>
+        <a href="#cars" class="nav-link">Armada</a>
+        <a href="#cars" class="nav-link">Testimoni</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none">
+    ☰
+</button>
+
+
+    <!-- Button Desktop -->
+    <a href="https://wa.me/6285769388386"
+   target="_blank"
+   rel="noopener"
+   class="inline-block btn-luxury px-6 py-2 rounded-full text-xs">
+   BOOK NOW
+</a>
+
+
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+     class="hidden fixed top-[80px] left-0 w-full
+            glass-card bg-opacity-95
+            flex flex-col items-center space-y-6
+            py-8 text-sm uppercase tracking-widest
+            font-semibold md:hidden z-50">
+
+    <a href="#home" class="nav-link">Beranda</a>
+    <a href="#about" class="nav-link">Tentang Kami</a>
+    <a href="#why" class="nav-link">Keunggulan</a>
+    <a href="#cars" class="nav-link">Armada</a>
+    <a href="#cars" class="nav-link">Testimoni</a>
+    <a href="#contact" class="nav-link">Kontak</a>
+
+    <!-- WhatsApp Button (JANGAN DIHAPUS) -->
+    <a href="https://wa.me/6285769388386"
+       target="_blank"
+       rel="noopener"
+       class="inline-block btn-luxury px-6 py-2 rounded-full text-xs">
+       BOOK NOW
+    </a>
+</div>
+
+
+
+</div>
+
+
+<!-- Hero Section -->
+<section id="home" class="h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1920"
+             alt="Mobil Mewah" class="w-full h-full object-cover">
+    </div>
+
+    <div class="relative z-10 text-center px-4 animate-fade">
+        <img src="https://i.imgur.com/6oLkKT7.png"
+             alt="Logo GOGASS RENTCAR"
+             class="mx-auto w-[280px] md:w-[420px] mb-6 drop-shadow-2xl">
+
+        <p class="text-sm md:text-base tracking-widest opacity-80">
+            Cepat Pesannya, Aman Jalannya.
+        </p>
+
+        <div class="flex justify-center space-x-4">
+            <a href="#cars" class="btn-luxury px-10 py-4 rounded-sm">LIHAT ARMADA</a>
+            <a href="#about" class="border border-white px-10 py-4 rounded-sm hover:bg-white hover:text-black transition uppercase text-sm font-bold">
+                DISCOVER MORE
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-24 blue-gradient">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-template-cols-2 lg:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+            <div class="absolute -top-4 -left-4 w-full h-full border-2 border-gold z-0"></div>
+            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=800"
+                 class="relative z-10 w-full rounded shadow-2xl">
+        </div>
+        <div class="animate-fade">
+            <h2 class="text-gold text-sm tracking-widest mb-2 font-bold uppercase">Tentang Kami</h2>
+            <h3 class="text-4xl md:text-5xl font-bold mb-6 text-white uppercase">GOGASS RENTCAR</h3>
+            <p class="text-gray-300 leading-relaxed mb-6">
+                GOGASS RENTCAR adalah jasa sewa mobil Bangka Belitung yang berlokasi di Pangkalpinang, hadir sebagai solusi transportasi aman, nyaman, dan terpercaya untuk wisatawan maupun masyarakat lokal.
+
+Kami menyediakan berbagai pilihan rental mobil di Bangka Belitung dengan kondisi kendaraan prima, bersih, dan terawat, siap digunakan untuk kebutuhan wisata, perjalanan bisnis, antar jemput bandara, acara keluarga, hingga sewa harian dan mingguan.
+
+Sebagai penyedia sewa mobil Pangkalpinang, GOGASS RENTCAR mengutamakan:
+            </p>
+            <ul class="keunggulan-list text-gray-300 mt-6 mb-6">
+    <li>Armada mobil berkualitas & rutin diservis</li>
+    <li>Harga sewa mobil yang kompetitif dan transparan</li>
+    <li>Proses pemesanan cepat dan mudah via WhatsApp</li>
+    <li>Pelayanan ramah, profesional, dan responsif</li>
+</ul>
+
+<p class="text-gray-300 leading-relaxed mb-4">
+    Kami percaya bahwa <strong>kepuasan pelanggan adalah kunci utama</strong>.
+    Oleh karena itu, setiap layanan kami dirancang untuk memberikan
+    <strong>pengalaman rental mobil Bangka Belitung yang aman dan bebas khawatir</strong>.
+</p>
+
+<p class="text-gray-300 leading-relaxed mb-4">
+    Jika Anda mencari <strong>rental mobil terpercaya di Bangka Belitung</strong>,
+    <strong>GOGASS RENTCAR</strong> adalah pilihan tepat untuk menemani setiap perjalanan Anda.
+</p>
+
+<p class="text-gray-300 font-bold">
+    GOGASS RENTCAR – Cepat Pesannya, Aman Jalannya.
+</p>
+
+        </div>
+    </div>
+
+<!-- Armada Mobil -->
+<section id="cars" class="py-24 bg-black">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Judul -->
+    <div class="text-center mb-16">
+      <h2 class="text-gold text-sm tracking-widest mb-2 font-bold uppercase">
+        Armada Kami
+      </h2>
+      <h3 class="text-4xl md:text-5xl font-bold text-white uppercase">
+        Mobil Siap Jalan
+      </h3>
+    </div>
+
+    <!-- Grid Armada -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- 1 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/Z9NVeXH.png"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">Toyota Alphard</h4>
+          <p class="price-tag mt-2">ALL IN + DRIVER</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/RSCPMfL.jpeg"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">Fortuner </h4>
+          <p class="price-tag mt-2">ALL IN + DRIVER</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/JMjQy3l.jpeg"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">Pajero Sport</h4>
+          <p class="price-tag mt-2">ALL IN + DRIVER</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/aMDyirO.jpeg"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">Innova Zenix</h4>
+          <p class="price-tag mt-2">Rp 600.000 / hari</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/uiE2gF5.png"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">Brio</h4>
+          <p class="price-tag mt-2">Rp 300.000 / hari</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/wjShfIa.jpeg"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">BUS EXECUTIVE</h4>
+          <p class="price-tag mt-2">ALL IN + DRIVER</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/iqEV7cu.png"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">HIACE</h4>
+          <p class="price-tag mt-2">ALL IN + DRIVER</p>
+         <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/UGdtacu.png"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">ALL NEW AVANZA</h4>
+          <p class="price-tag mt-2">Rp 400.000 / hari</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/L4CDcxz.png"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase"> TOYOTA Avanza</h4>
+          <p class="price-tag mt-2">Rp 300.000 / hari</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/ZayrP9N.png"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">SUZUKI ERTIGA </h4>
+          <p class="price-tag mt-2">Rp 300.000 / hari</p>
+          <a href="https://wa.me/6285769288386?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="glass-card overflow-hidden text-center">
+        <img src="https://i.imgur.com/q1lRWHb.png"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h4 class="font-bold text-white uppercase">INNOVA REBORN</h4>
+          <p class="price-tag mt-2">Rp 500.000 / hari</p>
+         <a href="https://wa.me/628159448886?text=Pesan%20Toyota%20Alphard"
+   target="_blank" rel="noopener"
+   class="btn-order-blue">
+   Pesan
+</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimoni" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-center text-2xl md:text-3xl font-bold uppercase tracking-widest mb-4">
+      Testimoni Klien
+    </h2>
+    <p class="text-center text-gray-400 mb-12">
+      Pengalaman pelanggan yang berlibur ke Bangka Belitung bersama GOGASS RENTCAR
+    </p>
+
+    <div class="testimonial-slider">
+      
+      <!-- Testimoni 1 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Liburan keluarga ke Bangka Belitung jadi sangat nyaman. Mobil bersih, supir ramah,
+          dan pelayanan GOGASS RENTCAR benar-benar profesional.”
+        </p>
+        <h4>Andi Pratama</h4>
+        <span>Wisatawan • Jakarta</span>
+      </div>
+
+      <!-- Testimoni 2 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Saya dan pasangan puas sekali. Proses booking cepat, mobil tepat waktu,
+          cocok untuk jelajah pantai-pantai Bangka.”
+        </p>
+        <h4>Rina & Fajar</h4>
+        <span>Pasangan • Bandung</span>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Pelayanan kelas atas. Armada mobilnya nyaman dan terlihat terawat.
+          Sangat membantu selama perjalanan bisnis dan wisata.”
+        </p>
+        <h4>Michael Tan</h4>
+        <span>Pengusaha • Surabaya</span>
+      </div>
+
+      <!-- Testimoni 4 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Pertama kali ke Bangka Belitung dan tidak kecewa memilih GOGASS RENTCAR.
+          Mobil siap, harga transparan, perjalanan jadi tenang.”
+        </p>
+        <h4>Siti Aisyah</h4>
+        <span>Traveler • Palembang</span>
+      </div>
+
+      <!-- Testimoni 5 -->
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          “Kami rombongan kecil wisata kuliner dan pantai.
+          GOGASS RENTCAR sangat profesional dan recommended.”
+        </p>
+        <h4>Dimas & Tim</h4>
+        <span>Wisata Grup • Jakarta</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Why Choose Us Section -->
+    <section id="why" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-gold text-sm tracking-widest mb-2 font-bold uppercase">Kenapa Memilih Kami?</h2>
+            <h3 class="text-4xl font-bold text-white uppercase">Keunggulan GOGASS</h3>
+        </div>
+        
+       <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <!-- 1 -->
+    <div class="glass-card p-10 text-center">
+        <div class="text-gold text-5xl mb-6 flex justify-center">
+            <i class="fa-solid fa-car"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-4 text-white uppercase">
+            Unit Prima & Terawat
+        </h4>
+        <p class="text-gray-400 text-sm">
+            Seluruh armada selalu dalam kondisi terbaik, rutin diservis, bersih, dan siap digunakan kapan saja.
+        </p>
+    </div>
+
+    <!-- 2 -->
+    <div class="glass-card p-10 text-center border-gold">
+        <div class="text-gold text-5xl mb-6 flex justify-center">
+            <i class="fa-solid fa-sliders"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-4 text-white uppercase">
+            Layanan Fleksibel
+        </h4>
+        <p class="text-gray-400 text-sm">
+            Bisa lepas kunci, dengan driver, harian hingga bulanan — semua menyesuaikan kebutuhan Anda.
+        </p>
+    </div>
+
+    <!-- 3 -->
+    <div class="glass-card p-10 text-center">
+        <div class="text-gold text-5xl mb-6 flex justify-center">
+            <i class="fa-solid fa-tags"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-4 text-white uppercase">
+            Harga Transparan
+        </h4>
+        <p class="text-gray-400 text-sm">
+            Tanpa biaya tersembunyi. Harga jelas, kompetitif, dan sesuai dengan kualitas layanan premium.
+        </p>
+    </div>
+
+    <!-- 4 -->
+    <div class="glass-card p-10 text-center">
+        <div class="text-gold text-5xl mb-6 flex justify-center">
+            <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <h4 class="text-xl font-bold mb-4 text-white uppercase">
+            Driver Profesional
+        </h4>
+        <p class="text-gray-400 text-sm">
+            Driver berpengalaman, ramah, sopan, dan memahami rute terbaik untuk kenyamanan perjalanan Anda.
+        </p>
+    </div>
+
+</div>
+</section>
+
+<!-- Social Media & Footer -->
+    <footer id="contact" class="pt-20 pb-10 border-t border-gray-900 bg-black">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-2">
+                <div class="logo text-3xl font-bold mb-6">
+    <span class="logo-gogass">GOGASS</span>
+    <span class="logo-rentcar ml-1">RENTCAR</span>
+                </div>
+                <p class="text-gray-500 max-w-sm mb-8">Pilihan utama bagi mereka yang menghargai waktu, kenyamanan, dan prestise dalam setiap perjalanan.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gold text-2xl transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold text-2xl transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold text-2xl transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="https://wa.me/6285769288386"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Tautan Cepat</h4>
+                <ul class="text-gray-500 space-y-4 text-sm">
+                    <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:text-white">Armada Mobil</a></li>
+                    <li><a href="#" class="hover:text-white">Syarat & Ketentuan</a></li>
+                    <li><a href="#" class="hover:text-white">Hubungi Kami</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Hubungi Kami</h4>
+                <ul class="text-gray-500 space-y-4 text-sm">
+                    <li class="flex items-center"><i class="fa-solid fa-location-dot text-gold mr-3"></i> Pangkalpinang, Bangka Belitung</li>
+                    <li class="flex items-center"><i class="fa-solid fa-phone text-gold mr-3"></i> +62 857 6938 8386</li>
+                    <li class="flex items-center"><i class="fa-solid fa-envelope text-gold mr-3"></i>gogassrentcar@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center pt-10 border-t border-gray-900">
+            <p class="text-gray-600 text-xs tracking-widest uppercase">© 2026 GOGASS RENTCAR. Crafted for Excellence.</p>
+        </div>
+    </footer>
+
+
+  
+
+
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- LOCAL JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

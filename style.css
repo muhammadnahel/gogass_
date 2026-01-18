@@ -1,0 +1,253 @@
+:root {
+    --primary-black: #0a0a0a;
+    --soft-white: rgba(255, 255, 255, 0.05);
+    --luxury-blue-deep: #001529;
+    --luxury-blue-bright: #004e92;
+    --gold-accent: #bbee30;
+    --gold-glow: #bbf157;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-black);
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Cinzel', serif;
+}
+
+.bg-pattern {
+    background-image: radial-gradient(var(--soft-white) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.blue-gradient {
+    background: linear-gradient(135deg, var(--luxury-blue-deep), var(--luxury-blue-bright));
+}
+
+.text-gold { color: var(--gold-accent); }
+.border-gold { border-color: var(--gold-accent); }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--soft-white);
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--gold-accent);
+    transform: translateY(-10px);
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--gold-accent);
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-luxury {
+    background: linear-gradient(45deg, var(--gold-accent), var(--gold-glow));
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-luxury:hover {
+    transform: scale(1.05);
+}
+
+[data-aos] {
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+/* === BUTTON PESAN (BIRU LUXURY) === */
+.btn-order-blue {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 22px;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #2563eb, #38bdf8);
+    color: #ffffff;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+.btn-order-blue:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 35px rgba(56, 189, 248, 0.6);
+}
+/* === GLASS CARD SILVER LUXURY === */
+.glass-card {
+    background: linear-gradient(
+        145deg,
+        #f2f3f5,
+        #d6d9de
+    );
+    border-radius: 22px;
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,0.65),
+        0 15px 35px rgba(0,0,0,0.18);
+    backdrop-filter: blur(6px);
+    transition: all 0.35s ease;
+}
+
+/* Hover premium */
+.glass-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,0.75),
+        0 25px 55px rgba(0,0,0,0.28);
+}
+.glass-card img {
+    background: radial-gradient(
+        circle at top,
+        #ffffff,
+        #d1d5db
+    );
+    padding: 12px;
+    border-radius: 18px;
+}
+.glass-card h4 {
+    color: #1f2933;
+}
+
+.price-tag {
+    color: #374151;
+    font-weight: 600;
+}
+/* === NAVBAR TEXT LUXURY BLUE === */
+.nav-link {
+    color: #2563eb; /* luxury blue */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #1e40af;
+}
+
+/* Menu aktif */
+.nav-link.active {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+/* === ARMADA BACKGROUND : DARK SILVER LUXURY === */
+#cars {
+    background:
+        linear-gradient(
+            135deg,
+            #2f3237,
+            #3a3f45,
+            #4a5058
+        );
+    position: relative;
+}
+#cars::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            110deg,
+            rgba(255,255,255,0.12),
+            rgba(255,255,255,0.02),
+            transparent
+        );
+    pointer-events: none;
+}
+#cars > * {
+    position: relative;
+    z-index: 1;
+}
+/* === TESTIMONI SECTION === */
+#testimoni {
+    background: linear-gradient(135deg, #1f2226, #2a2e33);
+    color: #e5e7eb;
+}
+
+/* Slider */
+.testimonial-slider {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.testimonial-slider::-webkit-scrollbar {
+    height: 6px;
+}
+
+.testimonial-slider::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+/* Card */
+.testimonial-card {
+    min-width: 300px;
+    max-width: 340px;
+    scroll-snap-align: start;
+    background: linear-gradient(145deg, #2f343a, #1f2226);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    color: #d1d5db;
+}
+
+.testimonial-card h4 {
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+.testimonial-card span {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+.keunggulan-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.keunggulan-list li {
+  position: relative;
+  padding-left: 32px;   /* jarak panah ke teks */
+  margin-bottom: 14px;  /* jarak ke bawah */
+  line-height: 1.7;
+}
+
+.keunggulan-list li::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #bae425; /* gold */
+  font-weight: bold;
+}
